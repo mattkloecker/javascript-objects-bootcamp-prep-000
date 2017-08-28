@@ -1,12 +1,12 @@
 var playlist = {
  zztop: "lowrider"
   }
-function updatePlaylist(listname, artistName, songTitle){
- listname[artistName] = songTitle;
-  return listname
+function updatePlaylist(playlistname, artistName, songTitle){
+playlistname[artistName] = songTitle;
+  return playlistname
 }
 
-function removeFromPlaylist(playlist, artistName){
-  delete playlist.artistName;
-  return playlist
+function removeFromPlaylist(playlistname, artistName){
+  delete playlistname.artistName;
+  return playlistname
 }
